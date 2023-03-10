@@ -9,12 +9,12 @@ Reference the target module on your controller. Use the callback function to ref
 ```js
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/m/MessageBox"
+    "sap/m/MessageBox" //Reference MessageBox
 ],
 /**
  * @param {typeof sap.ui.core.mvc.Controller} Controller
  */
-function (Controller, MessageBox) {
+function (Controller, MessageBox) {//Add MessageBox in callback function
     "use strict";
 
     return Controller.extend("project1.controller.View1", {
@@ -29,6 +29,7 @@ function (Controller, MessageBox) {
             if(oOrder.getValue() !== "" && oCustomer.getValue() !== ""){
                 oOrder.setValueState("None");
                 oCustomer.setValueState("None");
+                //Use MessageBox module
                 MessageBox.success("Order " + oOrder.getValue() + " has been processed for Customer " + oCustomer.getValue() + " sucessfully!" );
             } else {
                 oOrder.setValueState("Error");
