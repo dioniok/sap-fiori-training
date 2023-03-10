@@ -1,4 +1,4 @@
-# Day 2 Exercises
+# Day 2 Exercises - 1
 This is a reference of Code for Day 2 Exercise.
 
 ## Day 2 Exercise - Create Display Orders Page
@@ -44,6 +44,7 @@ Add the filterbar with Order ID and Customer ID fields inside the content in the
 </content>
 ```
 
+### Create the Table 
 Since we have already referenced the sap.m library, we can now add sap.m controls. Add the table inside the content after the filterbar.
 ```xml
 <Table>
@@ -119,6 +120,7 @@ Since we have already referenced the sap.m library, we can now add sap.m control
 </Table>
 ```
 
+### Create the Footer
 Add footer after content and create a Process Order Button.
 ```xml
 <footer>
