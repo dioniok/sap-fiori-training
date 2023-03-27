@@ -9,3 +9,7 @@ This repository contains reference of code per exercise, to guide beginner in cr
 5. [Day 2 Assignment](/Day2_Assignment.md)
 6. [Day 3 Exercise - Data Binding](/Day3_Exercise_DataBinding.md)
 7. [Day 3 Assignment](/Day3_Assignment.md)
+8. [Day 4 Exercise - OData Model Binding](/Day4_Exercise_ODataModel_1.md)
+9. [Day 4 Exercise - Translation](/Day4_Exercise_Translation_2.md)
+10. [Day 4 Exercise - Formatters](/Day4_Exercise_Formatters_3.md)
+11. [Day 4 Assignment](/Day4_Assignment.md)
