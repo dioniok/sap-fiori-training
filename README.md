@@ -15,4 +15,4 @@ This repository contains reference of code per exercise, to guide beginner in cr
 11. [Day 4 Assignment](/Day4_Assignment.md)
 12. [Day 5 Exercise - Filtering](/Day5_Exercise_Filtering_1.md)
 13. [Day 5 Exercise - Sorting](/Day5_Exercise_Sorting_2.md)
-14. [Day 4 Assignment](/Day5_Assignment.md)
+14. [Day 5 Assignment](/Day5_Assignment.md)
