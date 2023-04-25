@@ -22,7 +22,7 @@ sap.ui.define([
 function (Controller) {
     "use strict";
 
-    return Controller.extend("project1.controller.View1", {
+    return Controller.extend("zbootcamp.controller.View1", {
         onProcessOrder: function () {
 
         }
