@@ -33,6 +33,6 @@ btnProcessOrder=Prozessauftrag
 ### Test the application
 Add sap-ui-language=DE to your URL parameters
 ```csv
-Sample Link: https://port8080-workspaces-ws-ss9w8.ap21.trial.applicationstudio.cloud.sap/test/flpSandbox.html?sap-ui-xx-viewCache=false&sap-ui-language=DE#project2-display
+Sample Link: https://port8080-workspaces-ws-ss9w8.ap21.trial.applicationstudio.cloud.sap/test/flpSandbox.html?sap-ui-xx-viewCache=false&sap-ui-language=DE#zbootcamp-display
 ```
 Test your application. 
