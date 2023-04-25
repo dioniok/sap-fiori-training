@@ -33,6 +33,7 @@ colRequiredDate=Required Date
       <Column>
           <Text text="{i18n>colShippingCountry}" />
       </Column>
+      <!-- Add Required Date Column -->
       <Column>
           <Text text="{i18n>colRequiredDate}" />
       </Column>
@@ -50,6 +51,7 @@ colRequiredDate=Required Date
                   }}" 
               />
               <Text text="{ShipCountry}" />
+              <!-- Add Required Date -->
               <Text text="{RequiredDate}" />
           </cells>
       </ColumnListItem>
