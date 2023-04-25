@@ -17,7 +17,7 @@ sap.ui.define([
 function (Controller, MessageBox) {//Add MessageBox in callback function
     "use strict";
 
-    return Controller.extend("project1.controller.View1", {
+    return Controller.extend("zbootcamp.controller.View1", {
         onProcessOrder: function () {
             var oOrder = this.getView().byId("idOrder");
             var oCustomer = this.getView().byId("idCustomer");
