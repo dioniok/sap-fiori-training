@@ -21,7 +21,7 @@ title=Display Orders
 
 Reference the filterbar in the View1 xml.
 ```xml
-<mvc:View controllerName="project1.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:filterbar="sap.ui.comp.filterbar">
+<mvc:View controllerName="zbootcamp.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:filterbar="sap.ui.comp.filterbar">
 ```
 
 Add the filterbar with Order ID and Customer ID fields inside the content in the View1 xml.
