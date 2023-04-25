@@ -9,7 +9,7 @@ In this step we will sort the orders in descending order once the sort button is
 <Table id="idOrders" items="{/Orders}">
 ```
 
-###Create a Sort Button
+### Create a Sort Button
 Go to your View1 xml and add a sort button inside the OverflowToolbar.
 
 ```xml
@@ -22,7 +22,7 @@ Go to your View1 xml and add a sort button inside the OverflowToolbar.
 </headerToolbar>
 ```
 
-###Reference Sorter
+### Reference Sorter
 Go to your View1 controller and add Sorter as reference.
 
 ```js
@@ -32,15 +32,15 @@ sap.ui.define([
     "project2/model/formatter",
     "sap/ui/model/Filter",
     "sap/ui/model/FilterOperator",
-    "sap/ui/model/Sorter"
+    "sap/ui/model/Sorter" //Add Sorter as Module
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (Controller, MessageBox, Formatter, Filter, FilterOperator, Sorter) {
+    function (Controller, MessageBox, Formatter, Filter, FilterOperator, Sorter) { //Add Sorter
 
 ```
-###Add a press event and name it onSort.
+### Add a press event and name it onSort.
 Create a Sorter with the path OrderID and set descending property to true. Get the table items using the table id and sort the table items. 
 
 ```js
