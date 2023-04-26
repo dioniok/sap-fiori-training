@@ -1,7 +1,7 @@
-# Day 3 Exercises 
-This is a reference of Code for Day 3 Exercise.
+# Session 3 Exercises 
+This is a reference of Code for Session 3 Exercise.
 
-## Day 3 Exercise - Data Binding
+## Session 3 Exercise - Data Binding
 In this exercise we will use the 3 types of Data Binding (Aggregation, Context, Property).
 
 ### Create JSON data
