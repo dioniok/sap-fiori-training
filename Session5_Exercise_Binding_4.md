@@ -81,7 +81,7 @@ Test your application.
 ## Create Order
 In this step we will create a post request to backend. 
 
-### Create new button Add
+### Create a new button for create
 In your View1 xml, add a new button for Create inside the header toolbar of the table.
 
 ```xml
