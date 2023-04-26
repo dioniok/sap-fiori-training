@@ -115,4 +115,21 @@ onCreate: function(){
 }
 ```
 
+Add the MessageBox as module.
+```js
+sap.ui.define([
+    "sap/ui/core/mvc/Controller",
+    "sap/m/MessageToast",
+    "zbootcamp/model/formatter",
+    "sap/ui/model/Filter",
+    "sap/ui/model/FilterOperator",
+    "sap/ui/model/Sorter",
+    "sap/m/MessageBox" //Add MessageBox
+],
+/**
+ * @param {typeof sap.ui.core.mvc.Controller} Controller
+ */
+function (Controller, MessageToast, Formatter, Filter, FilterOperator, Sorter, MessageBox) { //Add MessageBox
+```
+
 Test your application. 
