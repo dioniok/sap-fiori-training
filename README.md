@@ -15,4 +15,6 @@ This repository contains reference of code per exercise, to guide beginner in cr
 11. [Session 4 Assignment](/Session4_Assignment.md)
 12. [Session 5 Exercise - Filtering](/Session5_Exercise_Filtering_1.md)
 13. [Session 5 Exercise - Sorting](/Session5_Exercise_Sorting_2.md)
-14. [Session 5 Assignment](/Session5_Assignment.md)
+14. [Session 5 Exercise - Routing](/Session5_Exercise_Routing_3.md)
+15. [Session 5 Exercise - Binding](/Session5_Exercise_Binding_4.md)
+16. [Session 5 Assignment](/Session5_Assignment.md)
