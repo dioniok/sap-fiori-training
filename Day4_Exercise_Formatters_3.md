@@ -1,7 +1,7 @@
-# Day 4 Exercise - 3
-This is a reference of Code for Day 4 Exercise.
+# Session 4 Exercise - 3
+This is a reference of Code for Session 4 Exercise.
 
-## Day 4 Exercise – Formatters
+## Session 4 Exercise – Formatters
 In this exercise we will add a new Column Required Date and change the date pattern.
 
 ### Add new i18n text for Column Required Date
