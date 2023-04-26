@@ -4,6 +4,80 @@ This is a reference of Code for Session 4 Exercise.
 ## Session 4 Exercise – Translation
 In this exercise we will translate the texts into German
 
+### Update your i18n.properties file 
+
+```csv
+# This is the resource bundle for zbootcamp
+
+#Texts for manifest.json
+
+#XTIT: Application name
+appTitle=Display Orders
+
+#YDES: Application description
+appDescription=A Fiori application.
+#XTIT: Main view title
+title=Display Orders
+
+#Filter Bar
+filtOrder=Order ID
+filtCustomer=Customer ID
+
+#Table Columns
+colOrder=Order 
+colCustomer=Customer
+colShipVia=Ship Via
+colShippingDate=Ship. Date
+colShippingCountry=Ship. Country
+colRequiredDate=Required Date
+
+#Buttons
+btnProcessOrder=Process Order
+
+```
+
+### Replace the hardcoded labels in your xml file
+
+```xml
+<filterbar:filterGroupItems>
+    <filterbar:FilterGroupItem name="order" groupName="a" visibleInFilterBar="true" label="{i18n>filtOrder}">
+        <filterbar:control>
+            <Input id="idOrder" value="{northwind>/Orders/0/OrderID}"/>
+        </filterbar:control>
+    </filterbar:FilterGroupItem>
+    <filterbar:FilterGroupItem name="customer" groupName="a" visibleInFilterBar="true" label="{i18n>filtCustomer}">
+        <filterbar:control>
+            <Input id="idCustomer" value="{northwind>/Orders/0/CustomerID}"/>
+        </filterbar:control>
+    </filterbar:FilterGroupItem>
+</filterbar:filterGroupItems>        
+```
+```xml
+<columns>
+    <Column>
+        <Text text="{i18n>colOrder}" />
+    </Column>
+    <Column>
+        <Text text="{i18n>colCustomer}" />
+    </Column>
+    <Column>
+        <Text text="{i18n>colShipVia}"/>
+    </Column>
+    <Column>
+        <Text text="{i18n>colShippingDate}"/>
+    </Column>
+    <Column>
+        <Text text="{i18n>colShippingCountry}" />
+    </Column>
+</columns>
+```
+```xml
+<Button text="{i18n>btnProcessOrder}" type="Emphasized" press="onProcessOrder"/>
+                
+```
+
+
+
 ### Create i18n.properties for German texts
 Duplicate the i18n.properties file and rename the second one as i18n_de.properties
 
