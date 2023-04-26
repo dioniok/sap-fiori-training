@@ -89,7 +89,7 @@ sap.ui.define([
 /**
  * @param {typeof sap.ui.core.mvc.Controller} Controller
  */
-function (Controller, MessageToast, Formatter) { /Add formatter
+function (Controller, MessageToast, Formatter) { //Add formatter
     "use strict";
 
     return Controller.extend("zbootcamp.controller.View1", {
