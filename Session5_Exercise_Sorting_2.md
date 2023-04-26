@@ -4,7 +4,7 @@ This is a reference of Code for Session 5 Exercise.
 ## Session 5 Exercise – Sorting
 In this step we will sort the orders in descending order once the sort button is pressed.
 
-###Remove and replace the Table items path
+### Remove and replace the Table items path
 ```xml
 <Table id="idOrders" items="{/Orders}">
 ```
