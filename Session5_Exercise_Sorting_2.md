@@ -45,12 +45,12 @@ Create a Sorter with the path OrderID and set descending property to true. Get t
 
 ```js
 onSort: function () {
-                var oSorter = new Sorter({
-                    path: "OrderID",
-                    descending: true
-                });
-                this.getView().byId("idOrders").getBinding("items").sort(oSorter);
-            }
+    var oSorter = new Sorter({
+        path: "OrderID",
+        descending: true
+    });
+    this.getView().byId("idOrders").getBinding("items").sort(oSorter);
+}
 
 ```
 
