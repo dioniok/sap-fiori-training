@@ -29,7 +29,6 @@ colCustomer=Customer
 colShipVia=Ship Via
 colShippingDate=Ship. Date
 colShippingCountry=Ship. Country
-colRequiredDate=Required Date
 
 #Buttons
 btnProcessOrder=Process Order
@@ -59,9 +58,6 @@ btnProcessOrder=Process Order
     </Column>
     <Column>
         <Text text="{i18n>colCustomer}" />
-    </Column>
-    <Column>
-        <Text text="{i18n>colShipVia}"/>
     </Column>
     <Column>
         <Text text="{i18n>colShippingDate}"/>
