@@ -1,7 +1,7 @@
-# Day 2 Exercises - 2
-This is a reference of Code for Day 2 Exercise.
+# Session 2 Exercises - 2
+This is a reference of Code for Session 2 Exercise.
 
-## Day 2 Exercise - Event Handlers
+## Session 2 Exercise - Event Handlers
 In this step we will create a MessageBox control and display a message when the Process Order button is clicked. 
 
 ### Attach an Event Handler
