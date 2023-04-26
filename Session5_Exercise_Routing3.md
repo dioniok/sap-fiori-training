@@ -223,6 +223,8 @@ In order for our element binding to have an effect, we must now replace the hard
 </mvc:View>
 ```
 
+Test your application.
+
 
 
 
