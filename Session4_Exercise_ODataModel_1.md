@@ -58,7 +58,7 @@ Copy your northwind.json file from the previous project and add it to your model
 }
 ```
 
-Go to your manifest.json file, under models section, add the northwind json model.
+Go to your manifest.json file, under models section and add the northwind json model.
 ```js
 "models": {
       "i18n": {
