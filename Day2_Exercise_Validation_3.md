@@ -1,7 +1,7 @@
-# Day 2 Exercises - 3
-This is a reference of Code for Day 2 Exercise.
+# Session 2 Exercises - 3
+This is a reference of Code for Session 2 Exercise.
 
-## Day 2 Exercise - Simple Validation
+## Session 2 Exercise - Simple Validation
 In this step, we will replace the message in the MessageBox with the Order ID and Customer ID values entered. 
 
 ### Identify Objects in View
