@@ -1,7 +1,7 @@
-# Day 4 Exercise - 1
-This is a reference of Code for Day 4 Exercise.
+# Session 4 Exercise - 1
+This is a reference of Code for Session 4 Exercise.
 
-## Day 4 Exercise – Odata Model Binding
+## Session 4 Exercise – Odata Model Binding
 In this exercise we will use the OData Model Northwind to bind in our table. 
 
 ### Retrieve data from Northwind service
