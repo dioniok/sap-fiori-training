@@ -10,6 +10,7 @@ In this exercise we will continue the steps in the slide and add a new Column Re
     <cells>
         <ObjectIdentifier title="{OrderID}" />
         <Text text="{CustomerID}" />
+	 <!-- Format the Shipped Date -->
         <Text text="{path: 'ShippedDate', 
                 type: 'sap.ui.model.type.Date',
                 formatOptions: {
@@ -29,6 +30,7 @@ In this exercise we will continue the steps in the slide and add a new Column Re
     <Column>
         <Text text="{i18n>colCustomer}" />
     </Column>
+	<!-- Add Ship Via -->
     <Column>
         <Text text="{i18n>colShipVia}"/>
     </Column>
@@ -44,7 +46,8 @@ In this exercise we will continue the steps in the slide and add a new Column Re
         <cells>
             <ObjectIdentifier title="{OrderID}" />
             <Text text="{CustomerID}" />
-             <Text text="{path: 'ShipVia', formatter: '.formatter.getShipperName'}" />
+		<!-- Add Ship Via -->
+            <Text text="{path: 'ShipVia', formatter: '.formatter.getShipperName'}" />
             <Text text="{path: 'ShippedDate', 
                     type: 'sap.ui.model.type.Date',
                     formatOptions: {
@@ -81,16 +84,16 @@ sap.ui.define([], function () {
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/m/MessageToast",
-    "zbootcamp/model/formatter",
+    "zbootcamp/model/formatter", //Add formatter
 ],
 /**
  * @param {typeof sap.ui.core.mvc.Controller} Controller
  */
-function (Controller, MessageToast, Formatter) {
+function (Controller, MessageToast, Formatter) { /Add formatter
     "use strict";
 
     return Controller.extend("zbootcamp.controller.View1", {
-        formatter: Formatter,
+        formatter: Formatter, //Add formatter
         
         onProcessOrder: function () {
             var oOrder = this.getView().byId("idOrder");
