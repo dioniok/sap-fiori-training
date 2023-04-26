@@ -40,7 +40,7 @@ sap.ui.define([
     function (Controller, MessageBox, Formatter, Filter, FilterOperator, Sorter) { //Add Sorter
 
 ```
-### Add a press event and name it onSort.
+### Add a press event and name it onSort
 Create a Sorter with the path OrderID and set descending property to true. Get the table items using the table id and sort the table items. 
 
 ```js
