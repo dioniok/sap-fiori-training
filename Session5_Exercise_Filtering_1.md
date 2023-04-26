@@ -16,7 +16,7 @@ Assign an id to your table and name it idOrders.
 <Table id="idOrders" items="{/Orders}">
 ```
 
-### Reference the Filter and Filter Operator as modules.
+### Reference the Filter and Filter Operator as modules
 ```js
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
@@ -48,7 +48,7 @@ Test your application.
 ## Session 5 Exercise – Filtering– Multiple Values
 In this step we will filter the table by Order ID and Customer ID. 
 
-### Get the value of the Order ID and Customer ID.
+### Get the value of the Order ID and Customer ID
 Go to your View1 controller and on the onSearch function get the value of the Order ID and Customer ID.
 
 ```js
@@ -56,7 +56,7 @@ var sOrderID = this.getView().byId("idOrder").getValue();
 var sCustomerID = this.getView().byId("idCustomer").getValue();
 ```
 
-### Get the table items using the table id.
+### Get the table items using the table id
 ```js
 var oBinding = this.getView().byId("idOrders").getBinding("items");
 ```
