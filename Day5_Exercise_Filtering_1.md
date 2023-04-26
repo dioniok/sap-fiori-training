@@ -1,7 +1,7 @@
-# Day 5 Exercise - 1
-This is a reference of Code for Day 5 Exercise.
+# Session 5 Exercise - 1
+This is a reference of Code for Session 5 Exercise.
 
-## Day 5 Exercise – Filtering– Multiple Values
+## Session 5 Exercise – Filtering– Multiple Values
 In this step we will filter the table by Order ID and Customer ID. 
 
 ### Get the value of the Order ID and Customer ID.
