@@ -20,7 +20,7 @@ Add a type in the ColumnListItem and set the value to Navigation.
 Create a new view with a simple details page using Simple form control and name it View2.view.xml.
 
 ```xml
-<mvc:View controllerName="zbootcamp.controller.View2" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
 	<Page>
 		<content>
 			<f:SimpleForm title="Order 10248">
