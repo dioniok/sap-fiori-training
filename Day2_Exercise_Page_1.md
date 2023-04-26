@@ -1,7 +1,7 @@
-# Day 2 Exercises - 1
-This is a reference of Code for Day 2 Exercise.
+# Session 2 Exercises - 1
+This is a reference of Code for Session 2 Exercise.
 
-## Day 2 Exercise - Create Display Orders Page
+## Session 2 Exercise - Create Display Orders Page
 In this exercise we will create the Display Orders Page.
 
 ### Change Application Title
