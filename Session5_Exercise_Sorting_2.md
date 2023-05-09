@@ -29,7 +29,7 @@ Go to your View1 controller and add Sorter as reference.
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/m/MessageBox",
-    "project2/model/formatter",
+    "zbootcamp/model/formatter",
     "sap/ui/model/Filter",
     "sap/ui/model/FilterOperator",
     "sap/ui/model/Sorter" //Add Sorter as Module
