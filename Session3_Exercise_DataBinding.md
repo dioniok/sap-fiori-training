@@ -57,7 +57,7 @@ In your manifest.json add the northwind json under models after i18n.
   "i18n": {
     "type": "sap.ui.model.resource.ResourceModel",
     "settings": {
-      "bundleName": "project1.i18n.i18n"
+      "bundleName": "zbootcamp.i18n.i18n"
     }
   },
   "northwind": {
