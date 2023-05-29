@@ -5,19 +5,19 @@ This is a reference of Code for Session 5 Exercise.
 In this step we will apply the changes we have done in the slides for Routing.
 
 ### Add Navigation to Item
-Add an itemPress event in the Table and name it onItemPress.
+Add an `itemPress` event in the `Table` and name it `onItemPress`.
 
 ```xml
  <Table id="idOrders" items="{/Orders}" itemPress="onItemPress">
 ```
 
-Add a type in the ColumnListItem and set the value to Navigation.
+Add a type in the `ColumnListItem` and set the value to `Navigation`.
 ```xml
 <ColumnListItem type="Navigation">
 ```
 
 ### Create a new View 
-Create a new view with a simple details page using Simple form control and name it View2.view.xml.
+Create a new view with a simple details page using Simple form control and name it `View2.view.xml`.
 
 ```xml
 <mvc:View xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
@@ -41,7 +41,7 @@ Create a new view with a simple details page using Simple form control and name 
 ```
 
 ### Add a new route and target
-Go to your manifest.json file and add the new route and target for View2.
+Go to your `manifest.json` file and add the new route and target for `View2`.
 
 ```js
 "routes": [
@@ -78,7 +78,7 @@ Go to your manifest.json file and add the new route and target for View2.
 }
 ```
 ### Add the onItemPress function and add the routing to View2
-Add a router navigation to View2 once table item is pressed.
+Add a router navigation to `View2` once table item is pressed.
 ```js
 onItemPress: function(){
 	var oRouter = this.getOwnerComponent().getRouter();
@@ -93,7 +93,7 @@ Test your application.
 In this step we will route to the item page with a parameter. 
 
 ### Update routing pattern in manifest
-In your manifest.json, update the routing pattern for your detail page route to handle a mandatory parameter called orderId.
+In your `manifest.json`, update the routing pattern for your detail page route to handle a mandatory parameter called orderId.
 
 ```js
 {
@@ -106,7 +106,7 @@ In your manifest.json, update the routing pattern for your detail page route to 
 ```
 
 ### Create a controller for the View2
-Under the controller folder, create a new file and name it View2.controller.js.
+Under the `controller folder`, create a new file and name it `View2.controller.js`.
 
 ```js
 sap.ui.define([
@@ -128,14 +128,14 @@ sap.ui.define([
 ```
 
 ### Update View2 xml with new controller
-Open your View2.view.xml file, then set the controllerName attribute of your root <mvc:View> element to its designated controller.
+Open your `View2.view.xml` file, then set the `controllerName` attribute of your root `<mvc:View>` element to its designated controller.
 
 ```xml
 <mvc:View controllerName="zbootcamp.controller.View2" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
 ```
 
 ### Update onItemPress function
-Now, we need to update the onItemPress function in View1.controller.js to extract the data from the selected item, and then pass it onto the details page.
+Now, we need to update the `onItemPress` function in `View1.controller.js` to extract the data from the selected item, and then pass it onto the details page.
 
 ```js
  onItemPress: function(oEvent){
