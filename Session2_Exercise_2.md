@@ -10,7 +10,7 @@ You may use `Shift + Alt + F` to format your code in your JS and XML files.
 ### Attach an Event Handler
 Add a `press` event in the `Process Order Button`.
 ```xml
-<Button text="Process Order" type="Emphasized" press="onProcessOrder"/>
+<Button id="idProcessButton" text="Process Order" type="Emphasized" />
 ```
 
 ### Create Event Function
