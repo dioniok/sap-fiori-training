@@ -53,22 +53,22 @@ Now that we have the Order ID from the initial screen, we can now use this to cr
 In order for our element binding to have an effect, we must now replace the hardcoded values found in the details view / second page.
 ```xml
 <mvc:View controllerName="zbootcamp.controller.View2" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
-	<Page>
+	<Page id="detailPage">
 		<content>
-			<f:SimpleForm title="">
+			<f:SimpleForm id="idForm" title="">
 				<f:content>
-					<Label text="Customer"/>
-					<Text text="{CustomerID}"/>
-					<Label text="Ship Via"/>
-					<Text text="{path: 'ShipVia', formatter: '.formatter.getShipperName'}"/>
-					<Label text="Ship Date"/>
-					<Text text="{path: 'ShippedDate', 
-                                type: 'sap.ui.model.type.Date',
-                                formatOptions: {
-                                    pattern: 'yyyy/MM/dd'
-                                }}" />
-					<Label text="Ship Country"/>
-					<Text text="{ShipCountry}"/>
+					<Label id="idLabelCustomer" text="Customer"/>
+					<Text id="idTextCustomer" text="{CustomerID}"/>
+					<Label id="idLabelShipVia" text="Ship Via"/>
+					<Text id="idTextShipVia" text="{path: 'ShipVia', formatter: '.formatter.getShipperName'}"/>
+					<Label id="idLabelShipDate" text="Ship Date"/>
+					<Text id="idTextShipDate" text="{path: 'ShippedDate', 
+					type: 'sap.ui.model.type.Date',
+					formatOptions: {
+					    pattern: 'yyyy/MM/dd'
+					}}" />
+					<Label id="idLabelShipCountry" text="Ship Country"/>
+					<Text id="idTextShipCountry" text="{ShipCountry}"/>
 				</f:content>
 			</f:SimpleForm>
 		</content>
@@ -85,13 +85,13 @@ In this step we will create a post request to backend.
 In your View1 xml, add a new button for Create inside the header toolbar of the table.
 
 ```xml
- <OverflowToolbar>
-    <Title text="Orders (6)" />
-    <ToolbarSpacer/>
-   <!--Create new button Add-->
-    <Button press="onCreate" icon="sap-icon://add"/>
-    <Button press="onSort" icon="sap-icon://sort"/>
-</OverflowToolbar>
+  <OverflowToolbar id="idHeaderToolbar">
+    <Title id="idTitle" text="Orders (6)" />
+    <ToolbarSpacer id="idHdrToolBarSpacer"/>
+    <!--Create new button Add-->
+    <Button id="idCreateBtn" press="onCreate" icon="sap-icon://add"/>
+    <Button id="idSortBtn" press="onSort" icon="sap-icon://sort"/>
+  </OverflowToolbar>
 ```
 
 
