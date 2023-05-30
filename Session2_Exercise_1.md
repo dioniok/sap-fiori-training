@@ -132,7 +132,7 @@ Add `<footer>` after `<content>` and create a `Process Order Button`.
      <OverflowToolbar id="idFooterToolBar">
          <content>
              <ToolbarSpacer id="idToolBarSpacer"/>
-             <Button id="idProcessButton" text="Process Order" type="Emphasized" />
+             <Button id="idProcessBtn" text="Process Order" type="Emphasized" />
          </content>
      </OverflowToolbar>
  </footer>
