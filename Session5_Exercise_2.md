@@ -6,20 +6,20 @@ In this step we will sort the orders in descending order once the sort button is
 
 ### Remove and replace the Table items path
 ```xml
-<Table id="idOrders" items="{/Orders}">
+<Table id="idTableOrders" items="{/Orders}">
 ```
 
 ### Create a Sort Button
 Go to your View1 xml and add a sort button inside the OverflowToolbar.
 
 ```xml
-<headerToolbar>
-  <OverflowToolbar>
-      <Title text="Orders (6)" />
-      <ToolbarSpacer/>
-      <Button press="onSort" icon="sap-icon://sort"/>
+ <headerToolbar>
+  <OverflowToolbar id="idHeaderToolbar">
+    <Title id="idTitle" text="Orders (6)" />
+    <ToolbarSpacer id="idHdrToolBarSpacer"/>
+    <Button id="idSortBtn" press="onSort" icon="sap-icon://sort"/>
   </OverflowToolbar>
-</headerToolbar>
+ </headerToolbar>
 ```
 
 ### Reference Sorter
@@ -49,7 +49,7 @@ onSort: function () {
         path: "OrderID",
         descending: true
     });
-    this.getView().byId("idOrders").getBinding("items").sort(oSorter);
+    this.getView().byId("idTableOrders").getBinding("items").sort(oSorter);
 }
 
 ```
