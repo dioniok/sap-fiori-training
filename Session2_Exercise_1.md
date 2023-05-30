@@ -52,75 +52,75 @@ Test your application.
 Add the `<Table>` inside the `<content>` after the `<filterbar>`.
 ```xml
 <Table id="idTableOrders">
-  <headerToolbar>
-      <OverflowToolbar>
-          <Title text="Orders (6)" />
-      </OverflowToolbar>
-  </headerToolbar>
-  <columns>
-      <Column>
-          <Text text="Order" />
-      </Column>
-      <Column>
-          <Text text="Customer" />
-      </Column>
-      <Column>
-          <Text text="Ship. Date" />
-      </Column>
-      <Column>
-          <Text text="Ship. Country" />
-      </Column>
-  </columns>
-  <items>
-      <ColumnListItem>
-          <cells>
-              <ObjectIdentifier title="10250" />
-              <Text text="HANAR" />
-              <Text text="July 12, 1996" />
-              <Text text="Brazil" />
-          </cells>
-      </ColumnListItem>
-      <ColumnListItem>
-          <cells>
-              <ObjectIdentifier title="10251" />
-              <Text text="VICTE" />
-              <Text text="July 15, 1996" />
-              <Text text="France" />
-          </cells>
-      </ColumnListItem>
-      <ColumnListItem>
-          <cells>
-              <ObjectIdentifier title="10252" />
-              <Text text="SUPRD" />
-              <Text text="July 11, 1996" />
-              <Text text="Belgium" />
-          </cells>
-      </ColumnListItem>
-      <ColumnListItem>
-          <cells>
-              <ObjectIdentifier title="10253" />
-              <Text text="HANAR" />
-              <Text text="July 16, 1996" />
-              <Text text="Brazil" />
-          </cells>
-      </ColumnListItem>
-      <ColumnListItem>
-          <cells>
-              <ObjectIdentifier title="10254" />
-              <Text text="CHOPS" />
-              <Text text="July 23, 1996" />
-              <Text text="Switzerland" />
-          </cells>
-      </ColumnListItem>
-      <ColumnListItem>
-          <cells>
-              <ObjectIdentifier title="10255" />
-              <Text text="RICSU" />
-              <Text text="July 15, 1996" />
-              <Text text="Switzerland" />
-          </cells>
-      </ColumnListItem>
-  </items>
+ <headerToolbar>
+     <OverflowToolbar id="idHeaderToolbar">
+         <Title id="idTitle" text="Orders (6)" />
+     </OverflowToolbar>
+ </headerToolbar>
+ <columns>
+     <Column id="idColumnOrder">
+         <Text id="idTextOrder" text="Order" />
+     </Column>
+     <Column id="idColumnCustomer">
+         <Text id="idTextCustomer" text="Customer" />
+     </Column>
+     <Column id="idColumnShipDate">
+         <Text id="idTextShipDate" text="Ship. Date" />
+     </Column>
+     <Column id="idColumnShipCountry">
+         <Text id="idTextShipCountry" text="Ship. Country" />
+     </Column>
+ </columns>
+ <items>
+     <ColumnListItem id="idColumnItem1">
+         <cells>
+             <ObjectIdentifier id="idOrder1" title="10250" />
+             <Text id="idCustomer1" text="HANAR" />
+             <Text id="idShipDate1" text="July 12, 1996" />
+             <Text id="idShipCountry1" text="Brazil" />
+         </cells>
+     </ColumnListItem>
+     <ColumnListItem id="idColumnItem2">
+         <cells>
+             <ObjectIdentifier id="idOrder2" title="10251" />
+             <Text id="idCustomer2" text="VICTE" />
+             <Text id="idShipDate2" text="July 15, 1996" />
+             <Text id="idShipCountry2" text="France" />
+         </cells>
+     </ColumnListItem>
+     <ColumnListItem id="idColumnItem3">
+         <cells>
+             <ObjectIdentifier id="idOrder3" title="10252" />
+             <Text id="idCustomer3" text="SUPRD" />
+             <Text id="idShipDate3" text="July 11, 1996" />
+             <Text id="idShipCountry3" text="Belgium" />
+         </cells>
+     </ColumnListItem>
+     <ColumnListItem id="idColumnItem4">
+         <cells>
+             <ObjectIdentifier id="idOrder4" title="10253" />
+             <Text id="idCustomer4" text="HANAR" />
+             <Text id="idShipDate4" text="July 16, 1996" />
+             <Text id="idShipCountry4" text="Brazil" />
+         </cells>
+     </ColumnListItem>
+     <ColumnListItem id="idColumnItem5">
+         <cells>
+             <ObjectIdentifier id="idOrder5" title="10254" />
+             <Text id="idCustomer5" text="CHOPS" />
+             <Text id="idShipDate5" text="July 23, 1996" />
+             <Text id="idShipCountry5" text="Switzerland" />
+         </cells>
+     </ColumnListItem>
+     <ColumnListItem id="idColumnItem6">
+         <cells>
+             <ObjectIdentifier id="idOrder6" title="10255" />
+             <Text id="idCustomer6" text="RICSU" />
+             <Text id="idShipDate6" text="July 15, 1996" />
+             <Text id="idShipCountry6" text="Switzerland" />
+         </cells>
+     </ColumnListItem>
+ </items>
 </Table>
 ```
 Test your application.
@@ -128,14 +128,14 @@ Test your application.
 ### Create the Footer
 Add `<footer>` after `<content>` and create a `Process Order Button`.
 ```xml
-<footer>
-    <OverflowToolbar>
-        <content>
-            <ToolbarSpacer />
-            <Button id="idProcessBtn" text="Process Order" type="Emphasized" />
-        </content>
-    </OverflowToolbar>
-</footer>
+ <footer>
+     <OverflowToolbar id="idFooterToolBar">
+         <content>
+             <ToolbarSpacer id="idToolBarSpacer"/>
+             <Button id="idProcessButton" text="Process Order" type="Emphasized" />
+         </content>
+     </OverflowToolbar>
+ </footer>
 
 ```
 Test your application.
