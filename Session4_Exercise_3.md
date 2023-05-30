@@ -6,58 +6,59 @@ In this exercise we will continue the steps in the slide and add a new Column Re
 
 ### Format Shipped Date
 ```xml
-<ColumnListItem>
+<ColumnListItem id="idColumnListItem">
     <cells>
-        <ObjectIdentifier title="{OrderID}" />
-        <Text text="{CustomerID}" />
+        <ObjectIdentifier id="idOrderID" title="{OrderID}" />
+        <Text id="idCustomerID" text="{CustomerID}" />
 	 <!-- Format the Shipped Date -->
-        <Text text="{path: 'ShippedDate', 
+        <Text id="idShipDate" text="{path: 'ShippedDate', 
                 type: 'sap.ui.model.type.Date',
                 formatOptions: {
                     pattern: 'yyyy/MM/dd'
                 }}" 
             />
-        <Text text="{ShipCountry}" />
+        <Text id="idShipCountry" text="{ShipCountry}" />
     </cells>
 </ColumnListItem>
 ```
 ### Add new Column ShipVia
 ```xml
 <columns>
-    <Column>
-        <Text text="{i18n>colOrder}" />
+    <Column id="idColumnOrder">
+        <Text id="idTextOrder" text="{i18n>colOrder}" />
     </Column>
-    <Column>
-        <Text text="{i18n>colCustomer}" />
+    <Column id="idColumnCustomer">
+        <Text id="idTextCustomer" text="{i18n>colCustomer}" />
     </Column>
 	<!-- Add Ship Via -->
-    <Column>
-        <Text text="{i18n>colShipVia}"/>
+    <Column id="idColumnShipVia">
+        <Text id="idTextShipVia" text="{i18n>colShipVia}"/>
     </Column>
-    <Column>
-        <Text text="{i18n>colShippingDate}"/>
+    <Column id="idColumnShipDate">
+        <Text id="idTextShipDate" text="{i18n>colShippingDate}"/>
     </Column>
-    <Column>
-        <Text text="{i18n>colShippingCountry}" />
+    <Column id="idColumnShipCountry">
+        <Text id="idTextShipCountry" text="{i18n>colShippingCountry}" />
     </Column>
 </columns>
 <items>
-    <ColumnListItem>
+    <ColumnListItem id="idColumnListItem">
         <cells>
-            <ObjectIdentifier title="{OrderID}" />
-            <Text text="{CustomerID}" />
+            <ObjectIdentifier id="idOrderID" title="{OrderID}" />
+            <Text id="idCustomerID" text="{CustomerID}" />
 		<!-- Add Ship Via -->
-            <Text text="{path: 'ShipVia', formatter: '.formatter.getShipperName'}" />
-            <Text text="{path: 'ShippedDate', 
+            <Text id="idShipVia" text="{path: 'ShipVia', formatter: '.formatter.getShipperName'}" />
+            <Text id="idShipDate" text="{path: 'ShippedDate', 
                     type: 'sap.ui.model.type.Date',
                     formatOptions: {
                         pattern: 'yyyy/MM/dd'
                     }}" 
                 />
-            <Text text="{ShipCountry}" />
+            <Text id="idShipCountry" text="{ShipCountry}" />
         </cells>
     </ColumnListItem>
 </items>
+
 ```
 ### Create a new file named ``formatter.js`` and add the following code
 ```js
@@ -124,48 +125,86 @@ colRequiredDate=Required Date
 
 ### Add new Column and Row Required Date
 ```xml
- <Table items="{/Orders}">
+<columns>
+    <Column id="idColumnOrder">
+        <Text id="idTextOrder" text="{i18n>colOrder}" />
+    </Column>
+    <Column id="idColumnCustomer">
+        <Text id="idTextCustomer" text="{i18n>colCustomer}" />
+    </Column>
+    <Column id="idColumnShipVia">
+        <Text id="idTextShipVia" text="{i18n>colShipVia}"/>
+    </Column>
+    <Column id="idColumnShipDate">
+        <Text id="idTextShipDate" text="{i18n>colShippingDate}"/>
+    </Column>
+    <Column id="idColumnShipCountry">
+        <Text id="idTextShipCountry" text="{i18n>colShippingCountry}" />
+    </Column>
+</columns>
+<items>
+    <ColumnListItem id="idColumnListItem">
+        <cells>
+            <ObjectIdentifier id="idOrderID" title="{OrderID}" />
+            <Text id="idCustomerID" text="{CustomerID}" />
+		<!-- Add Ship Via -->
+            <Text id="idShipVia" text="{path: 'ShipVia', formatter: '.formatter.getShipperName'}" />
+            <Text id="idShipDate" text="{path: 'ShippedDate', 
+                    type: 'sap.ui.model.type.Date',
+                    formatOptions: {
+                        pattern: 'yyyy/MM/dd'
+                    }}" 
+                />
+            <Text id="idShipCountry" text="{ShipCountry}" />
+        </cells>
+    </ColumnListItem>
+</items>
+
+
+---
+ <Table id="idTableOrders" items="{/Orders}">
   <headerToolbar>
-      <OverflowToolbar>
-          <Title text="Orders (6)" />
+      <OverflowToolbar id="idHeaderToolbar">
+          <Title id="idTitle" text="Orders (6)" />
       </OverflowToolbar>
   </headerToolbar>
   <columns>
-      <Column>
-          <Text text="{i18n>colOrder}" />
-      </Column>
-      <Column>
-          <Text text="{i18n>colCustomer}" />
-      </Column>
-      <Column>
-          <Text text="{i18n>colShipVia}"/>
-      </Column>
-      <Column>
-          <Text text="{i18n>colShippingDate}"/>
-      </Column>
-      <Column>
-          <Text text="{i18n>colShippingCountry}" />
-      </Column>
+      <Column id="idColumnOrder">
+        <Text id="idTextOrder" text="{i18n>colOrder}" />
+    </Column>
+    <Column id="idColumnCustomer">
+        <Text id="idTextCustomer" text="{i18n>colCustomer}" />
+    </Column>
+    <Column id="idColumnShipVia">
+        <Text id="idTextShipVia" text="{i18n>colShipVia}"/>
+    </Column>
+    <Column id="idColumnShipDate">
+        <Text id="idTextShipDate" text="{i18n>colShippingDate}"/>
+    </Column>
+    <Column id="idColumnShipCountry">
+        <Text id="idTextShipCountry" text="{i18n>colShippingCountry}" />
+    </Column>
       <!-- Add Required Date Column -->
-      <Column>
-          <Text text="{i18n>colRequiredDate}" />
+      <Column id="idColumnRequiredDate">
+          <Text id="idTextRequiredDate" text="{i18n>colRequiredDate}" />
       </Column>
   </columns>
   <items>
       <ColumnListItem>
           <cells>
-              <ObjectIdentifier title="{OrderID}" />
-              <Text text="{CustomerID}" />
-              <Text text="{path: 'ShipVia', formatter: '.formatter.getShipperName'}" />
-              <Text text="{path: 'ShippedDate', 
-                  type: 'sap.ui.model.type.Date',
-                  formatOptions: {
-                      pattern: 'yyyy/MM/dd'
-                  }}" 
-              />
-              <Text text="{ShipCountry}" />
-              <!-- Add Required Date -->
-              <Text text="{RequiredDate}" />
+		<ObjectIdentifier id="idOrderID" title="{OrderID}" />
+		<Text id="idCustomerID" text="{CustomerID}" />
+		<!-- Add Ship Via -->
+		<Text id="idShipVia" text="{path: 'ShipVia', formatter: '.formatter.getShipperName'}" />
+		<Text id="idShipDate" text="{path: 'ShippedDate', 
+		type: 'sap.ui.model.type.Date',
+		formatOptions: {
+		pattern: 'yyyy/MM/dd'
+		}}" 
+		/>
+		<Text id="idShipCountry" text="{ShipCountry}" />
+		<!-- Add Required Date -->
+		<Text id="idRequiredDate"  text="{RequiredDate}" />
           </cells>
       </ColumnListItem>
   </items>
@@ -174,7 +213,7 @@ colRequiredDate=Required Date
 # Format the Required Date
 Format the RequiredDate and use date pattern MM/dd/yyyy
 ```xml
- <Text text="{path: 'RequiredDate', 
+ <Text id="idRequiredDate" text="{path: 'RequiredDate', 
   type: 'sap.ui.model.type.Date',
   formatOptions: {
       pattern: 'MM/dd/yyyy'
