@@ -7,13 +7,13 @@ In this step we will apply the changes needed from the slides to create a Filter
 Add a search event in the FilterBar control and name it onSearch.
 
 ```xml
-<filterbar:FilterBar search="onSearch">
+<filterbar:FilterBar id="idFilterBar" search="onSearch">
 ```
 
 ### Assign an id to your Orders Table
 Assign an id to your table and name it idOrders. 
 ```xml
-<Table id="idOrders" items="{/Orders}">
+<Table id="idTableOrders" items="{/Orders}">
 ```
 
 ### Reference the Filter and Filter Operator as modules
@@ -39,7 +39,7 @@ onSearch: function(){
     var sValue = oView.byId("idOrder").getValue();
     var oFilter = new Filter ("OrderID", FilterOperator.EQ, sValue);
 
-    oView.byId("idOrders").getBinding("items").filter(oFilter);
+    oView.byId("idTableOrders").getBinding("items").filter(oFilter);
 }
 
 ```
@@ -58,7 +58,7 @@ var sCustomerID = this.getView().byId("idCustomer").getValue();
 
 ### Get the table items using the table id
 ```js
-var oBinding = this.getView().byId("idOrders").getBinding("items");
+var oBinding = this.getView().byId("idTableOrders").getBinding("items");
 ```
 
 ### Create a Filter with the Order ID and Customer ID values and use it to filter the table items.
