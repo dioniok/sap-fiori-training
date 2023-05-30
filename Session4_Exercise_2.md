@@ -32,6 +32,7 @@ colShippingCountry=Ship. Country
 
 #Buttons
 btnProcessOrder=Process Order
+btnCancelOrder=Cancel Order
 
 ```
 
@@ -39,12 +40,12 @@ btnProcessOrder=Process Order
 
 ```xml
 <filterbar:filterGroupItems>
-    <filterbar:FilterGroupItem name="order" groupName="a" visibleInFilterBar="true" label="{i18n>filtOrder}">
+    <filterbar:FilterGroupItem id="idFilterGrpItmOrder" name="order" groupName="a" visibleInFilterBar="true" label="{i18n>filtOrder}">
         <filterbar:control>
             <Input id="idOrder" value="{northwind>/Orders/0/OrderID}"/>
         </filterbar:control>
     </filterbar:FilterGroupItem>
-    <filterbar:FilterGroupItem name="customer" groupName="a" visibleInFilterBar="true" label="{i18n>filtCustomer}">
+    <filterbar:FilterGroupItem id="idFilterGrpItmCust" name="customer" groupName="a" visibleInFilterBar="true" label="{i18n>filtCustomer}">
         <filterbar:control>
             <Input id="idCustomer" value="{northwind>/Orders/0/CustomerID}"/>
         </filterbar:control>
@@ -53,22 +54,24 @@ btnProcessOrder=Process Order
 ```
 ```xml
 <columns>
-    <Column>
-        <Text text="{i18n>colOrder}" />
+    <Column id="idColumnOrder">
+        <Text id="idTextOrder" text="{i18n>colOrder}" />
     </Column>
-    <Column>
-        <Text text="{i18n>colCustomer}" />
+    <Column id="idColumnCustomer">
+        <Text id="idTextCustomer" text="{i18n>colCustomer}" />
     </Column>
-    <Column>
-        <Text text="{i18n>colShippingDate}"/>
+    <Column id="idColumnShipDate">
+        <Text id="idTextShipDate" text="{i18n>colShippingDate}" />
     </Column>
-    <Column>
-        <Text text="{i18n>colShippingCountry}" />
+    <Column id="idColumnShipCountry">
+        <Text id="idTextShipCountry" text="{i18n>colShippingCountry}" />
     </Column>
 </columns>
+
 ```
 ```xml
-<Button text="{i18n>btnProcessOrder}" type="Emphasized" press="onProcessOrder"/>
+<Button id="idProcessBtn" text="{i18n>btnProcessOrder}" type="Emphasized" press="onProcessOrder"/>
+<Button id="idCancelBtn" text="{i18n>btnCancelOrder}" press="onCancelOrder"/>
                 
 ```
 
@@ -98,6 +101,7 @@ colShippingCountry=Lieferungsland
 
 #Buttons
 btnProcessOrder=Prozessauftrag
+btnCancelOrder=Bestellung stornieren
 ```
 
 ### Test the application
