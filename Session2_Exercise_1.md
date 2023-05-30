@@ -4,8 +4,11 @@ This is a reference of Code for Session 2 Exercise.
 ## Session 2 Exercise - Create Display Orders Page
 In this exercise we will create the Display Orders Page.
 
+### How to Format Code
+You may use `Shift + Alt + F` to format your code in your JS and XML files. 
+
 ### Change Application Title
-Go to your i18n.properties file and update the application Title.
+Go to your `i18n.properties` file and update the `appTitle` and  `title`.
 
 ```csv
 #XTIT: Application name
@@ -19,35 +22,36 @@ title=Display Orders
 
 ### Create the Filter Bar 
 
-Reference the filterbar in the View1 xml.
+Reference the `sap.ui.comp.filterbar` in the `View1.view.xml`.
 ```xml
 <mvc:View controllerName="zbootcamp.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:filterbar="sap.ui.comp.filterbar">
 ```
 
-Add the filterbar with Order ID and Customer ID fields inside the content in the View1 xml.
+Add the `<filterbar>` with `Order ID` and `Customer ID` fields inside the `<content>` in the `View1.view.xml`.
 ```xml
 <content>
-  <filterbar:FilterBar>
+ <filterbar:FilterBar id="idFilterBar">
       <filterbar:filterGroupItems>
-          <filterbar:FilterGroupItem name="order" groupName="a" visibleInFilterBar="true" label="Order ID">
+          <filterbar:FilterGroupItem id="idFilterGrpItmOrder" name="order" groupName="a" visibleInFilterBar="true" label="Order ID">
               <filterbar:control>
-                  <Input />
+                  <Input id="idOrder"/>
               </filterbar:control>
           </filterbar:FilterGroupItem>
-          <filterbar:FilterGroupItem name="customer" groupName="a" visibleInFilterBar="true" label="Customer ID">
+          <filterbar:FilterGroupItem id="idFilterGrpItmCust" name="customer" groupName="a" visibleInFilterBar="true" label="Customer ID">
               <filterbar:control>
-                  <Input />
+                  <Input id="idCustomer"/>
               </filterbar:control>
           </filterbar:FilterGroupItem>
       </filterbar:filterGroupItems>
   </filterbar:FilterBar>
 </content>
 ```
+Test your application.
 
 ### Create the Table 
-Since we have already referenced the sap.m library, we can now add sap.m controls. Add the table inside the content after the filterbar.
+Add the `<Table>` inside the `<content>` after the `<filterbar>`.
 ```xml
-<Table>
+<Table id="idTableOrders">
   <headerToolbar>
       <OverflowToolbar>
           <Title text="Orders (6)" />
@@ -119,15 +123,16 @@ Since we have already referenced the sap.m library, we can now add sap.m control
   </items>
 </Table>
 ```
+Test your application.
 
 ### Create the Footer
-Add footer after content and create a Process Order Button.
+Add `<footer>` after `<content>` and create a `Process Order Button`.
 ```xml
 <footer>
     <OverflowToolbar>
         <content>
             <ToolbarSpacer />
-            <Button text="Process Order" type="Emphasized" />
+            <Button id="idProcessBtn" text="Process Order" type="Emphasized" />
         </content>
     </OverflowToolbar>
 </footer>
