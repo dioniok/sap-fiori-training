@@ -187,17 +187,17 @@ Test your application.
 
 Go to your View1 XML and remove all the northwind> prefixes in our bindings. Our OData Model is the default model, it means we do not need any prefixed model names when binding unlike what we did with the JSON Model.
 ```xml
-<Table items="{/Orders}">
+<Table id="idTableOrders" items="{/Orders}">
 ```
 
 ```xml
-<ColumnListItem>
-  <cells>
-    <ObjectIdentifier title="{OrderID}" />
-    <Text text="{CustomerID}" />
-    <Text text="{ShippedDate}" />
-    <Text text="{ShipCountry}" />
-  </cells>
+<ColumnListItem id="idColumnListItem">
+	<cells>
+		<ObjectIdentifier id="idOrderID" title="{OrderID}" />
+		<Text id="idCustomerID" text="{CustomerID}" />
+		<Text id="idShipDate" text="{ShippedDate}" />
+		<Text id="idShipCountry" text="{ShipCountry}" />
+	</cells>
 </ColumnListItem>
 ```
 
