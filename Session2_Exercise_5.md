@@ -1,8 +1,11 @@
-# Session 2 Exercises - 4
+# Session 2 Exercises - 5
 This is a reference of Code for Session 2 Exercise.
 
 ## Session 2 Exercise - Modules
 In this step, we will add the MessageBox as a module.
+
+### How to Format Code
+You may use `Shift + Alt + F` to format your code in your JS and XML files. 
 
 ### Add module
 Reference the target module on your controller. Use the callback function to reference the library/module. Show  message using the  built-in module.
