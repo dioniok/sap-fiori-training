@@ -73,19 +73,19 @@ In your manifest.json add the northwind json under models after i18n.
 In your View1 xml, add attribute items in your Table. The attribute items binds the children of our json model’s orders array to the Table. 
 This by itself is not enough to display the orders, instead it sets the parent path for the binding of all contained list items and their descendants.
 ```xml
-<Table items="{northwind>/Orders}">
+<Table id="idTableOrders" items="{northwind>/Orders}">
 ```
 
 ### Use Context Binding in the Table Row
 In addition you need to declare a nested element.The nested items element in our case contains a ColumnListItem. This serves as a template for creating the individual rows.
 ```xml
 <items>
-    <ColumnListItem>
+    <ColumnListItem id="idColumnListItem">
         <cells>
-            <ObjectIdentifier title="{northwind>OrderID}" />
-            <Text text="{northwind>CustomerID}" />
-            <Text text="{northwind>ShippedDate}" />
-            <Text text="{northwind>ShipCountry}" />
+            <ObjectIdentifier id="idOrderID" title="{northwind>OrderID}" />
+            <Text id="idCustomerID" text="{northwind>CustomerID}" />
+            <Text id="idShipDate" text="{northwind>ShippedDate}" />
+            <Text id="idShipCountry" text="{northwind>ShipCountry}" />
         </cells>
     </ColumnListItem>
 </items>
@@ -107,18 +107,18 @@ In your northwind.json, add a new array Columns after Orders.
 In the columns, bind the Column Labels in the Column text.
 ```xml
 <columns>
-    <Column>
-        <Text text="{northwind>/Columns/0/OrderID}" />
-    </Column>
-    <Column>
-        <Text text="{northwind>/Columns/0/CustomerID}" />
-    </Column>
-    <Column>
-        <Text text="{northwind>/Columns/0/ShippedDate}"/>
-    </Column>
-    <Column>
-        <Text text="{northwind>/Columns/0/ShipCountry}" />
-    </Column>
+	<Column id="idColumnOrder">
+	    <Text id="idTextOrder" text="{northwind>/Columns/0/OrderID}" />
+	</Column>
+	<Column id="idColumnCustomer">
+	    <Text id="idTextCustomer" text="{northwind>/Columns/0/CustomerID}" />
+	</Column>
+	<Column id="idColumnShipDate">
+	    <Text id="idTextShipDate" text="{northwind>/Columns/0/ShippedDate}"/>
+	</Column>
+	<Column id="idColumnShipCountry">
+	    <Text id="idTextShipCountry" text="{northwind>/Columns/0/ShipCountry}" />
+	</Column>
 </columns>
 
 ```
