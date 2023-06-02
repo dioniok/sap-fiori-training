@@ -6,7 +6,7 @@ In this exercise we will copy the codes from the previous project into the newly
 
 ### Copy the codes from previous project to the new project
 
-Copy your northwind.json file from the previous project and add it to your models folder in the new project. 
+Copy your ``northwind.json`` file from the previous project and add it to your models folder in the new project. 
 ```js
 {
 	"Orders" : [
@@ -184,7 +184,7 @@ Test your application.
 
 
 ### Retrieve data from Northwind service
-Go to your View1 XML and comment out the whole `Table` control and replace with new `Table` control that uses OData
+Go to your ``View1.view.xml`` file and comment out the whole `Table` control and replace with new `Table` control that uses OData
 
 <!-- Go to your View1 XML and remove all the northwind> prefixes in our bindings. Our OData Model is the default model, it means we do not need any prefixed model names when binding unlike what we did with the JSON Model. -->
 
