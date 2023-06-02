@@ -81,8 +81,27 @@ Test your application.
 ## Create Order
 In this step we will create a post request to backend. 
 
+### Add the MessageBox as module.
+On your controller file add the MessageBox library and declare it as global variable
+
+```js
+sap.ui.define([
+    "sap/ui/core/mvc/Controller",
+    "sap/m/MessageToast",
+    "zbootcamp/model/formatter",
+    "sap/ui/model/Filter",
+    "sap/ui/model/FilterOperator",
+    "sap/ui/model/Sorter",
+    "sap/m/MessageBox" //Add MessageBox
+],
+/**
+ * @param {typeof sap.ui.core.mvc.Controller} Controller
+ */
+function (Controller, MessageToast, Formatter, Filter, FilterOperator, Sorter, MessageBox) { //Add MessageBox
+```
+
 ### Create a new button for create
-In your View1 xml, add a new button for Create inside the header toolbar of the table.
+In your ``View1 xml``, add a new button for Create inside the OverflowToolbar of the table.
 
 ```xml
   <OverflowToolbar id="idHeaderToolbar">
@@ -94,8 +113,7 @@ In your View1 xml, add a new button for Create inside the header toolbar of the 
   </OverflowToolbar>
 ```
 
-
-Create a new function onCreate. Create the data and get the model and use method create to send a POST request to backend. 
+Create a new function ``onCreate``. Create the data and get the model and use method create to send a POST request to backend. 
 ```js
 onCreate: function(){
     var data = {
@@ -113,23 +131,6 @@ onCreate: function(){
         }
     });
 }
-```
-
-Add the MessageBox as module.
-```js
-sap.ui.define([
-    "sap/ui/core/mvc/Controller",
-    "sap/m/MessageToast",
-    "zbootcamp/model/formatter",
-    "sap/ui/model/Filter",
-    "sap/ui/model/FilterOperator",
-    "sap/ui/model/Sorter",
-    "sap/m/MessageBox" //Add MessageBox
-],
-/**
- * @param {typeof sap.ui.core.mvc.Controller} Controller
- */
-function (Controller, MessageToast, Formatter, Filter, FilterOperator, Sorter, MessageBox) { //Add MessageBox
 ```
 
 Test your application. 
