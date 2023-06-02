@@ -184,8 +184,10 @@ Test your application.
 
 
 ### Retrieve data from Northwind service
+Go to your View1 XML and comment out the whole `Table` control and replace with new `Table` control that uses OData
 
-Go to your View1 XML and remove all the northwind> prefixes in our bindings. Our OData Model is the default model, it means we do not need any prefixed model names when binding unlike what we did with the JSON Model.
+<!-- Go to your View1 XML and remove all the northwind> prefixes in our bindings. Our OData Model is the default model, it means we do not need any prefixed model names when binding unlike what we did with the JSON Model. -->
+
 ```xml
 <Table id="idTableOrders" items="{/Orders}">
 ```
