@@ -58,7 +58,7 @@ Copy your northwind.json file from the previous project and add it to your model
 }
 ```
 
-Go to your manifest.json file, under models section and add the northwind json model.
+Go to your ``manifest.json`` file, under models section and add the northwind json model.
 ```js
 "models": {
       "i18n": {
@@ -81,7 +81,7 @@ Go to your manifest.json file, under models section and add the northwind json m
     },
 
 ```
-Go to your View1.view.xml and replace the code.
+Go to your ``View1.view.xml`` and replace the code.
 
 ```xml
 <mvc:View controllerName="zbootcamp.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:filterbar="sap.ui.comp.filterbar">
