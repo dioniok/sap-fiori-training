@@ -145,7 +145,7 @@ Go to your ``View1.view.xml`` and replace the code.
 </mvc:View>
 ```
 
-Go to your View1.controller.js and replace the code.
+Go to your ``View1.controller.js`` and replace the code.
 ```js
 
 sap.ui.define([
