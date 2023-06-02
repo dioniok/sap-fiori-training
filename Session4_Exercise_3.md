@@ -80,7 +80,7 @@ sap.ui.define([], function () {
 });
 ```
 
-### Add the formatter in the View1 controller file
+### Add the formatter in the ``View1.controller.js`` file
 ```js
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
