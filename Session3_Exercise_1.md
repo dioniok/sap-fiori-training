@@ -5,7 +5,7 @@ This is a reference of Code for Session 3 Exercise.
 In this exercise we will use the 3 types of Data Binding (Aggregation, Context, Property).
 
 ### Create JSON data
-Create a new file northwind.json under models folder.
+Create a new file `northwind.json` under `models` folder.
 ```json
 {
 	"Orders" : [
@@ -51,7 +51,7 @@ Create a new file northwind.json under models folder.
 ```
 
 ### Add JSON in manifest file
-In your manifest.json add the northwind json under models after i18n.
+In your `manifest.json` add the northwind json under models after `i18n`.
 ```js
 "models": {
   "i18n": {
@@ -67,28 +67,6 @@ In your manifest.json add the northwind json under models after i18n.
     "preload": true
   }
 },
-```
-
-### Use Aggregation Binding in the Table  
-In your View1 xml, add attribute items in your Table. The attribute items binds the children of our json model’s orders array to the Table. 
-This by itself is not enough to display the orders, instead it sets the parent path for the binding of all contained list items and their descendants.
-```xml
-<Table id="idTableOrders" items="{northwind>/Orders}">
-```
-
-### Use Context Binding in the Table Row
-In addition you need to declare a nested element.The nested items element in our case contains a ColumnListItem. This serves as a template for creating the individual rows.
-```xml
-<items>
-    <ColumnListItem id="idColumnListItem">
-        <cells>
-            <ObjectIdentifier id="idOrderID" title="{northwind>OrderID}" />
-            <Text id="idCustomerID" text="{northwind>CustomerID}" />
-            <Text id="idShipDate" text="{northwind>ShippedDate}" />
-            <Text id="idShipCountry" text="{northwind>ShipCountry}" />
-        </cells>
-    </ColumnListItem>
-</items>
 ```
 
 ### Use Property Binding in the Table Columns
@@ -121,6 +99,28 @@ In the columns, bind the Column Labels in the Column text.
 	</Column>
 </columns>
 
+```
+
+### Use Aggregation Binding in the Table  
+In your `View1 xml`, add attribute items in your Table. The attribute `items` binds the children of our json model’s orders array to the Table. 
+This by itself is not enough to display the orders, instead it sets the parent path for the binding of all contained list items and their descendants.
+```xml
+<Table id="idTableOrders" items="{northwind>/Orders}">
+```
+
+### Use Context Binding in the Table Row
+In addition you need to declare a nested element.The nested items element in our case contains a `ColumnListItem`. This serves as a template for creating the individual rows.
+```xml
+<items>
+    <ColumnListItem id="idColumnListItem">
+        <cells>
+            <ObjectIdentifier id="idOrderID" title="{northwind>OrderID}" />
+            <Text id="idCustomerID" text="{northwind>CustomerID}" />
+            <Text id="idShipDate" text="{northwind>ShippedDate}" />
+            <Text id="idShipCountry" text="{northwind>ShipCountry}" />
+        </cells>
+    </ColumnListItem>
+</items>
 ```
 
 Test your application. 
