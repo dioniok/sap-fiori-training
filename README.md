@@ -19,3 +19,6 @@ This repository contains reference of code per exercise, to guide beginner in cr
 15. [Session 5 Exercise - Routing](/Session5_Exercise_3.md)
 16. [Session 5 Exercise - Binding](/Session5_Exercise_4.md)
 17. [Session 5 Assignment](/Session5_Assignment.md)
+
+** PLEASE Re-arrange the number **
+19. [Session 8 Assignment](/Session5_Assignment.md)
