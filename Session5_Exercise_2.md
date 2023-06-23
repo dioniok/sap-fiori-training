@@ -1,4 +1,4 @@
-# Session 5 Exercise - 1
+# Session 5 Exercise - 2
 This is a reference of Code for Session 5 Exercise.
 
 ## Session 5 Exercise – Odata Model Binding
