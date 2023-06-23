@@ -1,5 +1,5 @@
 # Session 8 Exercise - 2
-This is a reference of Code for Session 5 Exercise.
+This is a reference of Code for Session 8 Exercise.
 
 ## Session 8 Exercise – Binding the details view
 In this step we will bind the details view.
