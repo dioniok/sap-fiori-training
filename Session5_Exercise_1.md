@@ -1,7 +1,7 @@
-# Session 4 Exercise - 1
-This is a reference of Code for Session 4 Exercise.
+# Session 5 Exercise - 1
+This is a reference of Code for Session 5 Exercise.
 
-## Session 4 Exercise – Odata Model Binding
+## Session 5 Exercise – Odata Model Binding
 In this exercise we will copy the codes from the previous project into the newly created project and use the OData Model Northwind to bind in our table. 
 
 ### Copy the codes from previous project to the new project
