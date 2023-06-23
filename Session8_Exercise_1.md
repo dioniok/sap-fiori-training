@@ -1,7 +1,7 @@
-# Session 5 Exercise - 3
-This is a reference of Code for Session 5 Exercise.
+# Session 8 Exercise - 1
+This is a reference of Code for Session 8 Exercise.
 
-## Session 5 Exercise – Routing
+## Session 8 Exercise – Routing
 In this step we will apply the changes we have done in the slides for Routing.
 
 ### Add Navigation to Item
