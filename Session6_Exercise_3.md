@@ -1,7 +1,7 @@
-# Session 4 Exercise - 3
-This is a reference of Code for Session 4 Exercise.
+# Session 6 Exercise - 3
+This is a reference of Code for Session 6 Exercise.
 
-## Session 4 Exercise – Formatters
+## Session 6 Exercise – Formatters
 In this exercise we will continue the steps in the slide and add a new Column Required Date and change the date pattern.
 
 ### Format Shipped Date
