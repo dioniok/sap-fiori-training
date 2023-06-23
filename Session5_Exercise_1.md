@@ -1,5 +1,5 @@
 # Session 5 Exercise - 1
-This is a reference of Code for Session 5 Exercise 1.
+This is a reference of Code for Session 5 Exercise.
 
 ## Session 5 Exercise – Setting up Destinations
 In this exercise we will set-up destinations in BTP. 
