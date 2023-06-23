@@ -1,4 +1,4 @@
-# Session 6 Exercise - 3
+# Session 6 Exercise - 2
 This is a reference of Code for Session 6 Exercise.
 
 ## Session 6 Exercise – Formatters
