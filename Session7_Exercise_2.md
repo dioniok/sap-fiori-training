@@ -1,7 +1,7 @@
-# Session 5 Exercise - 2
-This is a reference of Code for Session 5 Exercise.
+# Session 7 Exercise - 2
+This is a reference of Code for Session 7 Exercise.
 
-## Session 5 Exercise – Sorting
+## Session 7 Exercise – Sorting
 In this step we will sort the orders in descending order once the sort button is pressed.
 
 ### Remove and replace the Table items path
