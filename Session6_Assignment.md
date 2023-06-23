@@ -1,4 +1,4 @@
-# Session 4 Assignment
+# Session 6 Assignment
 1. Translate your application to French (FR).
 2. Replace the formatter code for displaying the Shipper Name. Refer to the below details.
 
