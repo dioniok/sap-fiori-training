@@ -1,7 +1,7 @@
-# Session 5 Exercise - 3
-This is a reference of Code for Session 5 Exercise.
+# Session 7 Exercise - 3
+This is a reference of Code for Session 7 Exercise.
 
-## Session 5 Exercise – Grouping
+## Session 7 Exercise – Grouping
 In this step we will group the orders by `ShipCountry`.
 
 ### Create a Group Button
