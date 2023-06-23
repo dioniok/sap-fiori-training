@@ -1,7 +1,8 @@
-## Session 5 - Exercise 5 
+## Session 5 - Exercise 2
+This is a reference of Code for Session 5 Exercise.
 
-## Create Order
-In this step we will create a post request to backend. 
+## Session 5 Exercise – Post Request 
+In this step we will create a post request to backend using **Create Order**.
 
 ### Add the MessageBox as module.
 On your controller file add the MessageBox library and declare it as global variable
