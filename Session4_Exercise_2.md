@@ -1,7 +1,7 @@
-# Session 4 Exercise - 2
-This is a reference of Code for Session 4 Exercise.
+# Session 6 Exercise - 2
+This is a reference of Code for Session 6 Exercise.
 
-## Session 4 Exercise – Translation
+## Session 6 Exercise – Translation
 In this exercise we will translate the texts into German
 
 ### Update your ``i18n.properties`` file 
