@@ -1,4 +1,4 @@
-# Session 5 Exercise - 1
+# Session 6 Exercise - 1
 This is a reference of Code for Session 5 Exercise.
 
 In this step we will apply the changes needed from the slides to create a Filtering.
