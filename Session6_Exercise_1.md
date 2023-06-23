@@ -1,4 +1,4 @@
-# Session 6 Exercise - 2
+# Session 6 Exercise - 1
 This is a reference of Code for Session 6 Exercise.
 
 ## Session 6 Exercise – Translation
